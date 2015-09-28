@@ -1,0 +1,38 @@
+// blender material: intersection_mat
+material backside_mat
+{
+    receive_shadows on
+    technique backside_tech
+    {
+
+        pass backside_pass_forwards
+        {
+            emissive 1.0 1.0 1.0 1.0
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware anticlockwise
+            depth_check on
+	    depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting off
+            normalise_normals off
+            polygon_mode solid
+            scene_blend add
+            shading gouraud
+            transparent_sorting off
+	    //  HandGreenTextureUnit
+            texture_unit
+            {
+		texture hand_colored.png
+                //texture hand_blue.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 0
+                colour_op replace
+            }
+        }
+    }
+}

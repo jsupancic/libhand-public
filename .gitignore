@@ -1,0 +1,17 @@
+install_help
+*~
+*build*
+*.cmake
+*.o
+!*.cpp
+!*.h
+!*.txt
+install_help/install_help/linux_ogre_static_installer/ogre_src_v1-7-3.tar.bz2
+install_help/install_help/linux_ogre_static_installer/ogre_src_v1-7-3
+*CMakeFiles*
+hand_cpp/.kdev4/
+*CMakeCache*
+*Makefile*
+*kdev4
+*.a
+*.log
