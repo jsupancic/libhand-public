@@ -1,0 +1,7 @@
+kinematics/
+a.out
+eval_ik.cpp
+*.so
+annotation-database
+*.pyc
+frames

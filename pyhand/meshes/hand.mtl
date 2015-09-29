@@ -1,0 +1,21 @@
+# Blender MTL File: 'hand.blend'
+# Material Count: 2
+
+newmtl blackness
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+
+newmtl skin
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.165517 0.165517 0.165517
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/jsupanci/workspace/libhand/hand_model/blender/hand_texture.png
