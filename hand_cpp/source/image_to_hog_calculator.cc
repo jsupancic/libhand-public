@@ -49,12 +49,12 @@ void ImageToHogCalculator::CalcHog(const cv::Mat &image,
   ok_gradients_ = cv::Mat::zeros(image.size(), CV_8UC1);
 
   // calculate the 360 degree gradient
-  cv::calcMotionGradient(gray_image_, // input grayscale iamge
-                         ok_gradients_, // output mask of gradients
-                         deg_matrix_, // output matrix of degree info
-                         1, // ignore very very small magnitudes
-                         10000, // no specified maximum magnitude
-                         3); // Sobel operator aperture size
+  // cv::calcMotionGradient(gray_image_, // input grayscale iamge
+  //                        ok_gradients_, // output mask of gradients
+  //                        deg_matrix_, // output matrix of degree info
+  //                        1, // ignore very very small magnitudes
+  //                        10000, // no specified maximum magnitude
+  //                        3); // Sobel operator aperture size
 
   // 360 to 180 degree representation
   ConvertTo180Degrees(deg_matrix_);

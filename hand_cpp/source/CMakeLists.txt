@@ -23,6 +23,8 @@ ADD_DEFINITIONS(
 
 SET(BUILD_SHARED_LIBS OFF)
 
+find_package(OpenGL)      
+find_package(GLUT)
 FIND_PACKAGE(Boost REQUIRED COMPONENTS system)
 FIND_PACKAGE(OpenCV REQUIRED)
 
@@ -129,6 +131,8 @@ TARGET_LINK_LIBRARIES(pose_designer
   hand_renderer
   hand_utils
   ${Boost_LIBRARIES}
+  ${GLUT_LIBRARIES}
+  ${OPENGL_LIBRARIES}
 )
 
 SET(LibHand_INCLUDE_DIRS
