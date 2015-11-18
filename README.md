@@ -1,8 +1,8 @@
 # libhand-public
 Modifications to the LibHand Library
 
-+ provide segmentations
-+ provide keypoint locations
++ provide segmentations 
++ provide keypoint locations (HandRenderer::walk_bones, output in centimeters). 
 + provide depth images
 + Inverse-Kinematics refinement system
 
