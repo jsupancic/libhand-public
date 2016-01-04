@@ -639,9 +639,12 @@ void DotSceneLoader::processEntity(TiXmlElement *XMLNode, SceneNode *pParent)
 	  std::exit(1);
 	}
     }
-    catch(Ogre::Exception &/*e*/)
+    catch(Ogre::Exception &e)
     {
-        LogManager::getSingleton().logMessage("[DotSceneLoader] Error loading an entity!");
+        ostringstream message;
+        message << "[DotSceneLoader] Error loading an entity because ";
+        message << e.getFullDescription();
+        LogManager::getSingleton().logMessage(message.str());
     }
  
     // Process userDataReference (?)
