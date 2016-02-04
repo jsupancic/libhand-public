@@ -15,6 +15,7 @@
 # include <cmath>
 
 # include <exception>
+# include <stdexcept>
 # include <iostream>
 # include <vector>
 

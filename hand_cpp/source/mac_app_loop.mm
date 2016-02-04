@@ -42,6 +42,7 @@
 
 # include <iostream>
 # include <exception>
+# include <stdexcept>
 # import <Cocoa/Cocoa.h>
 
 // The private implementation of the Mac Application Loop
