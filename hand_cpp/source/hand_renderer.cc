@@ -312,8 +312,8 @@ class HandRendererPrivate {
 };
 
 // singleton
-static shared_ptr<Root> root_;
-static shared_ptr<RenderWindow> window_;
+static boost::shared_ptr<Root> root_;
+static boost::shared_ptr<RenderWindow> window_;
 
 // Forwarding HandRenderer calls to HandRendererPrivate
 HandRenderer::HandRenderer() : private_(new HandRendererPrivate) {}
